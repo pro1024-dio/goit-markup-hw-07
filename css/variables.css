@@ -4,14 +4,14 @@
   --white-color: rgba(255, 255, 255, 1);
   --accent-color: rgba(33, 150, 243, 1);
   --basic-hcolor: rgba(33, 33, 33, 1);
-  --footter-acolor: rgba(255, 255, 255, 0.6);
+  --footter-acolor-60: rgba(255, 255, 255, 0.6);
   --footter-acolor-10: rgba(255, 255, 255, 0.1);
   --accent-bgcolor: rgba(47, 48, 58, 1);
   --accent-bgcolor-40: rgba(47, 48, 58, 0.4);
   --accent-bgcolor-80: rgba(47, 48, 58, 0.8);
   --section-bgcolor: rgba(245, 244, 250, 1);
-  --logoheader-second-color: rgba(0, 0, 0, 1);
-  --logofooter-second-color: rgba(255, 255, 255, 1);
+  --header-logo-secondpart-color: rgba(0, 0, 0, 1);
+  --footer-logo-secondpart-color: rgba(255, 255, 255, 1);
   --border-cards-color: rgba(238, 238, 238, 1);
   --border-header-color: rgba(236, 236, 236, 1);
   --social-color: rgba(175, 177, 184, 1);

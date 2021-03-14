@@ -533,20 +533,6 @@ style section ourteam
   background-color: var(--white-color);
 }
 
-/* -------
-
-style for section clients 
-
-------- */
-
-/* .clients .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: calc(-1 * var(--min-indent));
-  margin-left: calc(-1 * var(--min-indent));
-} */
-
 /* ------
 
 STYLE FOR FOOTER
