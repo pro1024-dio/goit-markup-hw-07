@@ -67,8 +67,8 @@ address {
 .hero__btn-submit:hover,
 .form-subscribe__btn-submit:focus,
 .form-subscribe__btn-submit:hover,
-.modal-order-submit:focus,
-.modal-order-submit:hover {
+.modal-order__btn-submit:focus,
+.modal-order__btn-submit:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -87,7 +87,7 @@ address {
   transition: box-shadow 250ms var(--timing-transition);
 }
 
-.modal-form__btn-submit {
+.modal-order__btn-submit {
   display: block;
   min-width: 200px;
   height: 50px;
@@ -200,7 +200,8 @@ general style section elements
   color: var(--basic-hcolor);
 }
 
-.title--visually-hidden {
+.title--visually-hidden,
+.modal-order__chbox-accept-terms--visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -862,7 +863,7 @@ BACKDROP WITH MODAL WINDOW
   transition: opacity 250ms var(--timing-transition);
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -885,13 +886,13 @@ BACKDROP WITH MODAL WINDOW
     box-shadow 250ms var(--timing-transition);
 }
 
-.backdrop.is-hidden .modal-order {
+.backdrop--is-hidden .modal-order {
   box-shadow: none;
 
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal-btn-close {
+.modal-order__btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -908,17 +909,17 @@ BACKDROP WITH MODAL WINDOW
   transition: color 250ms var(--timing-transition);
 }
 
-.modal-btn-close:focus,
-.modal-btn-close:hover {
+.modal-order__btn-close:focus,
+.modal-order__btn-close:hover {
   color: var(--accent-color);
 }
 
-.modal-form {
+.modal-order__form {
   min-width: 100%;
   min-height: 100%;
 }
 
-.modal-form > .form-title {
+.modal-order__title {
   display: block;
   min-width: 100%;
   margin-bottom: 12px;
@@ -930,12 +931,12 @@ BACKDROP WITH MODAL WINDOW
   color: var(--basic-hcolor);
 }
 
-.modal-form .wrap-input {
+.modal-order__wrap-input {
   position: relative;
   cursor: pointer;
 }
 
-.modal-order .modal-form .modal-input {
+.modal-order__input {
   display: block;
   min-width: 100%;
   min-height: 40px;
@@ -957,7 +958,7 @@ BACKDROP WITH MODAL WINDOW
   transition: border-color 250ms var(--timing-transition);
 }
 
-.modal-form .modal-field-icon {
+.modal-order__field-icon {
   position: absolute;
   left: 12px;
   color: var(--basic-hcolor);
@@ -967,28 +968,28 @@ BACKDROP WITH MODAL WINDOW
   transition: color 250ms var(--timing-transition);
 }
 
-.modal-form .modal-input:focus + .modal-field-icon,
-.modal-form .modal-input:hover + .modal-field-icon {
+.modal-order__input:focus + .modal-order__field-icon,
+.modal-order__input:hover + .modal-order__field-icon {
   color: var(--accent-color);
 }
 
-.modal-form .modal-input:hover,
-.modal-form .modal-input:focus {
+.modal-order__input:hover,
+.modal-order__input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-form .modal-input.modal-textarea {
+.modal-order__textarea {
   min-height: 120px;
   margin-bottom: 0;
   padding-left: 17px;
   resize: none;
 }
 
-.modal-form .modal-input.modal-textarea::placeholder {
+.modal-order__textarea::placeholder {
   color: var(--basic-textcolor-50);
 }
 
-.modal-form .modal-lable {
+.modal-order__label {
   display: block;
   min-width: 100%;
   margin-bottom: 4px;
@@ -999,7 +1000,7 @@ BACKDROP WITH MODAL WINDOW
   color: var(--basic-textcolor);
 }
 
-.modal-accept-terms-field {
+.modal-order__accept-terms-field {
   position: relative;
   min-width: 100%;
   margin-top: 20px;
@@ -1008,29 +1009,26 @@ BACKDROP WITH MODAL WINDOW
   display: flex;
   flex-basis: 100%;
   justify-content: center;
-}
-
-.modal-form .modal-chbox-accept-terms:checked + .modal-field-icon {
-  border: none;
-}
-
-.modal-form .modal-chbox-accept-terms:checked + .modal-field-icon > use {
-  display: block;
-}
-
-.modal-form .modal-chbox-accept-terms:not(:checked) + .modal-field-icon > use {
-  display: none;
-}
-
-.modal-form .modal-accept-terms-field {
   cursor: pointer;
 }
 
-.modal-link-terms {
+.modal-order__chbox-accept-terms:checked + .modal-order__chbox-icon {
+  border: none;
+}
+
+.modal-order__chbox-accept-terms:checked + .modal-order__chbox-icon > use {
+  display: block;
+}
+
+.modal-order__chbox-accept-terms:not(:checked) + .modal-order__chbox-icon > use {
+  display: none;
+}
+
+.modal-order__link-terms {
   color: var(--accent-color);
 }
 
-.modal-accept-terms-field > .modal-field-icon {
+.modal-order__chbox-icon {
   position: absolute;
   left: 10px;
   top: 50%;
