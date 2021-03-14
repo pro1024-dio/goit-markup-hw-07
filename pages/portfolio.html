@@ -80,39 +80,53 @@
       </div>
     </header>
     <main>
-      <section class="section-portfolio">
+      <section class="page-portfolio">
         <div class="container">
-          <h1 class="sr-only">Наши работы</h1>
+          <h1 class="title title--visually-hidden">Наши работы</h1>
           <!-- Группа кнопок для фильтра работ -->
-          <ul class="filter-nav">
-            <li class="listitem">
-              <button class="filter-btn active" type="submit">Все</button>
+          <ul class="nav-filter">
+            <li class="nav-filter__item">
+              <button
+                class="btn-submit nav-filter__btn-submit nav-filter__btn-submit--active"
+                type="submit"
+                tabindex="-1"
+              >
+                Все
+              </button>
             </li>
-            <li class="listitem">
-              <button class="filter-btn" type="submit">Веб-сайты</button>
+            <li class="nav-filter__item">
+              <button class="btn-submit nav-filter__btn-submit" type="submit">
+                Веб-сайты
+              </button>
             </li>
-            <li class="listitem">
-              <button class="filter-btn" type="submit">Приложения</button>
+            <li class="nav-filter__item">
+              <button class="btn-submit nav-filter__btn-submit" type="submit">
+                Приложения
+              </button>
             </li>
-            <li class="listitem">
-              <button class="filter-btn" type="submit">Дизайн</button>
+            <li class="nav-filter__item">
+              <button class="btn-submit nav-filter__btn-submit" type="submit">
+                Дизайн
+              </button>
             </li>
-            <li class="listitem">
-              <button class="filter-btn" type="submit">Маркетинг</button>
+            <li class="nav-filter__item">
+              <button class="btn-submit nav-filter__btn-submit" type="submit">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- Группа карточек с работами -->
-          <div class="portfolio-card-container">
-            <ul class="portfolio-list">
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+          <div class="page-portfolio__cards-container">
+            <ul class="cards cards__grid">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio1.jpg"
                       alt="Веб-сайт Технокряк"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Технокряк это современная площадка распространения
                         коронавируса. Компании используют эту платформу для
                         цифрового шпионажа и атак на защищённые сервера
@@ -120,168 +134,184 @@
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Технокряк</h2>
-                    <p class="text">Веб-сайт</p>
+                  <div class="cards__content page-portfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Технокряк
+                    </h2>
+                    <p class="cards__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio2.jpg"
                       alt="Дизайн Постер New Orlean vs Golden Star"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores, eum quasi consequatur numquam atque
                         voluptatum nemo natus ab. Necessitatibus, asperiores!
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                    <p class="text">Дизайн</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Постер New Orlean vs Golden Star
+                    </h2>
+                    <p class="cards__text">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio3.jpg"
                       alt="Приложение Ресторан Seafood"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores, eum quasi consequatur numquam atque
                         voluptatum nemo natus ab. Necessitatibus, asperiores!
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Ресторан Seafood</h2>
-                    <p class="text">Приложение</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Ресторан Seafood
+                    </h2>
+                    <p class="cards__text">Приложение</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio4.jpg"
                       alt="Маркетинг Проект Prime"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores, eum quasi consequatur numquam atque
                         voluptatum nemo natus ab. Necessitatibus, asperiores!
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Проект Prime</h2>
-                    <p class="text">Маркетинг</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Проект Prime
+                    </h2>
+                    <p class="cards__text">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio5.jpg"
                       alt="Приложение Проект Boxes"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores, eum quasi consequatur numquam atque
                         voluptatum nemo natus ab. Necessitatibus, asperiores!
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Проект Boxes</h2>
-                    <p class="text">Приложения</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Проект Boxes
+                    </h2>
+                    <p class="cards__text">Приложения</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio6.jpg"
                       alt="Веб-сайт Inspiration has no Borders"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores, eum quasi consequatur numquam atque
                         voluptatum nemo natus ab. Necessitatibus, asperiores!
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Inspiration has no Borders</h2>
-                    <p class="text">Веб-сайт</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Inspiration has no Borders
+                    </h2>
+                    <p class="cards__text">Веб-сайт</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio7.jpg"
                       alt="Дизайн Издание Limited Edition"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores, eum quasi consequatur numquam atque
                         voluptatum nemo natus ab. Necessitatibus, asperiores!
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Издание Limited Edition</h2>
-                    <p class="text">Дизайн</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Издание Limited Edition
+                    </h2>
+                    <p class="cards__text">Дизайн</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio8.jpg"
                       alt="Маркетинг Проект LAB"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Asperiores, eum quasi consequatur numquam atque
                         voluptatum nemo natus ab. Necessitatibus, asperiores!
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Проект LAB</h2>
-                    <p class="text">Маркетинг</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Проект LAB
+                    </h2>
+                    <p class="cards__text">Маркетинг</p>
                   </div>
                 </a>
               </li>
-              <li class="listitem">
-                <a href="#">
-                  <div class="portfolio-card-img">
+              <li class="cards__card cards__card__gridelement">
+                <a class="cards__link" href="#">
+                  <div class="cards__thumb">
                     <img
                       src="../images/portfolio9.jpg"
                       alt="Приложение Growing Business"
                     />
-                    <div class="container-overlay">
-                      <p class="card-description">
+                    <div class="cards__overlay">
+                      <p class="cards__overlay-desc">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Consectetur, quam repellat cumque expedita quaerat
                         eveniet libero assumenda enim voluptatibus fugiat
@@ -300,9 +330,11 @@
                       </p>
                     </div>
                   </div>
-                  <div class="prtfolio-card-content">
-                    <h2 class="title">Growing Business</h2>
-                    <p class="text">Приложения</p>
+                  <div class="cards__content prtfolio__cards__content">
+                    <h2 class="cards__title page-portfolio__cards__title">
+                      Growing Business
+                    </h2>
+                    <p class="cards__text">Приложения</p>
                   </div>
                 </a>
               </li>
