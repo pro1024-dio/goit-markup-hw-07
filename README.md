@@ -7,7 +7,7 @@
 
 ## Структура файлов проекта
 
-![Структура файлов проекта](./07-preview.png)
+![Структура файлов проекта](https://github.com/goitacademy/html-css-homework/blob/master/07-preview.png/07-preview.png)
 
 ## Критерии приёма работы наставником
 
