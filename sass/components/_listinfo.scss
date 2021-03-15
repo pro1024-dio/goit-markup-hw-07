@@ -1,0 +1,34 @@
+.listinfo {
+  list-style: none;
+}
+
+.header__listinfo{
+  display: flex;
+  margin-left: auto;
+}
+
+.header__listinfo__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.listinfo__link {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.listinfo__link--view-for-header {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--basic-textcolor);
+}
+
+.listinfo__icon {
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}

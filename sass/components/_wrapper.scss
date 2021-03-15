@@ -1,0 +1,17 @@
+.wrapper {
+  max-width: 100%;
+  min-width: var(--width-container);
+  margin: 0 auto;
+}
+
+.wrapper--borderbottom {
+  border-bottom: 1px solid var(--border-header-color);
+}
+
+.wrapper--background-image {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-bgcolor-40),
+    var(--accent-bgcolor-40)
+  );
+}

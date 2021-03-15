@@ -1,0 +1,115 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.clients__items {
+  justify-content: flex-start;
+  margin-top: calc(-1 * var(--min-indent));
+  margin-left: calc(-1 * var(--min-indent));
+}
+
+.features__items__item {
+  width: 270px;
+}
+
+.clients__items__item {
+  height: 90px;
+  flex-basis: calc(100% / 6 - var(--min-indent));
+  margin-top: var(--min-indent);
+  margin-left: var(--min-indent);
+  outline: none;
+}
+
+.items__item--relative {
+  position: relative;
+}
+
+.items__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--social-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+
+  transition: background-color 250ms var(--timing-transition),
+    color 250ms var(--timing-transition),
+    box-shadow 250ms var(--timing-transition);
+}
+
+.items__link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.items__link:focus {
+  color: var(--accent-color);
+  box-sizing: border-box;
+  border: 0;
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+.items__thumb {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: var(--section-bgcolor);
+  border-radius: 4px;
+}
+
+.items__wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.items__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.items__overlay__title {
+  padding: 27px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.items__overlay--bg-img {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-bgcolor-80),
+    var(--accent-bgcolor-80)
+  );
+}
+
+.items__title {
+  font-weight: 700;
+  color: var(--basic-hcolor);
+  text-transform: uppercase;
+}
+
+.features__items__title {
+  margin-bottom: 10px;
+}
+
+.items__text {
+  line-height: 1.71;
+}
+
+.items__icon {
+  fill: currentColor;
+}

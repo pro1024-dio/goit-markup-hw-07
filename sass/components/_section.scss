@@ -1,0 +1,85 @@
+.hero__background {
+  max-width: var(--width-canvas);
+  min-height: var(--height-canvas);
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      var(--accent-bgcolor-40),
+      var(--accent-bgcolor-40)
+    ),
+    url(../images/hero-background.jpg);
+}
+
+.hero__container {
+  padding: 200px 0;
+}
+
+.hero__btn-submit {
+  margin: 0 auto;
+}
+
+.headline {
+  display: block;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero__headline {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.headline--whitecolor {
+  color: var(--white-color);
+}
+
+.ourteam {
+  min-width: var(--width-container);
+  background-color: var(--section-bgcolor);
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--basic-hcolor);
+}
+
+.title--visually-hidden,
+.modal-order__chbox-accept-terms--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title--whitecolor {
+  color: var(--white-color);
+}
+
+.title--uppercase {
+  text-transform: uppercase;
+}
+
+.portfolio__title,
+.ourteam__title,
+.clients__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text {
+  line-height: 1.71;
+}

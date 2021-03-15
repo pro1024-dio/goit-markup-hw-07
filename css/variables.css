@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --basic-textcolor: rgba(117, 117, 117, 1);
   --basic-textcolor-50: rgba(117, 117, 117, 0.5);
@@ -12,7 +13,7 @@
   --section-bgcolor: rgba(245, 244, 250, 1);
   --header-logo-secondpart-color: rgba(0, 0, 0, 1);
   --footer-logo-secondpart-color: rgba(255, 255, 255, 1);
-  --border-cards-color: rgba(238, 238, 238, 1);
+  --border-card-color: rgba(238, 238, 238, 1);
   --border-header-color: rgba(236, 236, 236, 1);
   --social-color: rgba(175, 177, 184, 1);
   --width-container: 1200px;
