@@ -1,9 +1,20 @@
-.logo__link {
-  text-decoration: none;
+.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  &--inheader {
+    margin-right: 93px;
+  }
+
+  &--infooter {
+    margin-bottom: 20px;
+  }
+}
+
+.logo__link {
+  text-decoration: none;
   color: var(--accent-color);
   outline: none;
 
@@ -12,10 +23,12 @@
   }
 }
 
-.logo__part--blackcolor {
-  color: var(--header-logo-secondpart-color);
-}
+.logo__span {  
+  &--dark-part {
+    color: var(--logo-dark-part-color);
+  }
 
-.logo__part--whitecolor {
-  color: var(--footer-logo-secondpart-color);
+  &--light-part {
+    color: var(--logo-light-part-color);
+  }
 }

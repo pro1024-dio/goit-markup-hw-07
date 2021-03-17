@@ -1,13 +1,13 @@
 .listinfo {
   list-style: none;
+
+  &--display-header {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
-.header__listinfo{
-  display: flex;
-  margin-left: auto;
-}
-
-.header__listinfo__item:not(:last-child) {
+.listinfo__item--margin-in-header:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -19,12 +19,12 @@
     color: var(--accent-color);
     outline: none;
   }
-}
 
-.listinfo__link--view-for-header {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--basic-textcolor);
+  &--view-for-header {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--basic-textcolor);
+  }
 }
 
 .listinfo__icon {

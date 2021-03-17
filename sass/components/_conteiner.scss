@@ -1,13 +1,40 @@
 .container {
   width: var(--width-container);
   margin: 0 auto;
-  padding: 94px 15px;
-}
+  
 
-.portfolio__container {
-  padding-top: 0;
-}
+  &--forheader {
+    padding: 0 15px;
+    min-height: 80px;
+  }
 
-.hero__container {
-  padding: 200px 0;
+  &--forfooter {
+    padding: 60px 15px;
+  }
+
+  &--display {
+    display: flex;
+  }
+
+  &--aligncenter {
+    align-items: center;
+  }
+
+  &--spacebetween {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &--forsection {
+    padding: 94px 15px;
+  }
+
+  &--forhero {
+    padding: 200px 0;
+  }
+
+  &--forportfolio {
+    padding: 94px 15px;
+    padding-top: 0;
+  }
 }

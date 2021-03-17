@@ -29,10 +29,12 @@
     -->
     <header class="header">
       <div class="wrapper wrapper--borderbottom">
-        <div class="container header__container">
-          <p class="logo header__logo">
+        <div
+          class="container container--forheader container--display container--aligncenter"
+        >
+          <p class="logo logo--inheader">
             <a class="logo__link" href="./index.html"
-              >Web<span class="logo__part logo__part--blackcolor"
+              >Web<span class="logo__span logo__span--dark-part"
                 >Studio</span
               ></a
             >
@@ -55,8 +57,8 @@
               </li>
             </ul>
           </nav>
-          <ul class="listinfo header__listinfo">
-            <li class="listinfo__item header__listinfo__item">
+          <ul class="listinfo listinfo--display-header">
+            <li class="listinfo__item listinfo__item--margin-in-header">
               <a
                 class="listinfo__link listinfo__link--view-for-header"
                 href="mailto:info@devstudio.com"
@@ -70,7 +72,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="listinfo__item header__listinfo__item">
+            <li class="listinfo__item listinfo__item--margin-in-header">
               <a
                 class="listinfo__link listinfo__link--view-for-header"
                 href="tel:+380961111111"
@@ -90,17 +92,17 @@
     </header>
     <main>
       <!-- Главная секция "Герой" -->
-      <section class="hero">
+      <section class="section section--hero">
         <div class="wrapper wrapper--background-image">
-          <div class="hero__background">
-            <div class="container hero__container">
-              <h1 class="headline hero__headline headline--whitecolor">
+          <div class="section__block-background">
+            <div class="container container--forhero">
+              <h1 class="section__headline">
                 Эффективные решения <br />
                 для вашего бизнеса
               </h1>
               <button
                 type="submit"
-                class="btn-submit hero__btn-submit"
+                class="btn-submit btn-submit--forhero"
                 data-modal-open
               >
                 Заказать услугу
@@ -110,10 +112,10 @@
         </div>
       </section>
       <!-- Секция Особенности -->
-      <section class="features">
+      <section class="section section--features">
         <div class="wrapper">
-          <div class="container">
-            <h2 class="title title--visually-hidden">Особенности</h2>
+          <div class="container container--forsection">
+            <h2 class="section__title visually-hidden">Особенности</h2>
             <ul class="items">
               <li class="items__item features__items__item">
                 <div class="items__thumb">
@@ -176,10 +178,10 @@
         </div>
       </section>
       <!-- Секция Чем мы занимаемся -->
-      <section class="portfolio">
+      <section class="section section--portfolio">
         <div class="wrapper">
-          <div class="container portfolio__container">
-            <h2 class="title portfolio__title">Чем мы занимаемся</h2>
+          <div class="container container--forportfolio">
+            <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="items">
               <li class="items__item items__item--relative">
                 <img
@@ -228,10 +230,10 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="ourteam">
+      <section class="section section--ourteam">
         <div class="wrapper">
-          <div class="container">
-            <h2 class="title ourteam__title">Наша команда</h2>
+          <div class="container container--forsection">
+            <h2 class="section__title">Наша команда</h2>
             <ul class="cards">
               <li class="cards__card ourteam__cards__card">
                 <div class="cards__thumb">
@@ -414,11 +416,11 @@
         </div>
       </section>
       <!-- Section clients -->
-      <section class="clients">
+      <section class="section section--clients">
         <div class="wrapper">
           <!-- <div class="background"> -->
-          <div class="container">
-            <h2 class="title clients__title">Постоянные клиенты</h2>
+          <div class="container container--forsection">
+            <h2 class="section__title">Постоянные клиенты</h2>
             <ul class="items clients__items">
               <li class="items__item clients__items__item">
                 <a class="items__link" href="#">
@@ -483,11 +485,13 @@
     <!-- section FOOTER -->
     <footer class="footer">
       <div class="wrapper footer__wrapper">
-        <div class="container footer__container">
+        <div
+          class="container container--forfooter container--display container--spacebetween"
+        >
           <div class="footer__block-contact">
-            <p class="logo footer__logo">
+            <p class="logo logo--infooter">
               <a class="logo__link" href="./index.html"
-                >Web<span class="logo__part logo__part--whitecolor"
+                >Web<span class="logo__span logo__span--light-part"
                   >Studio</span
                 >
               </a>

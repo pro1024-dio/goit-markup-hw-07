@@ -1,4 +1,4 @@
-.hero__background {
+.section__block-background {
   max-width: var(--width-canvas);
   min-height: var(--height-canvas);
   margin: 0 auto;
@@ -13,71 +13,37 @@
     url(../images/hero-background.jpg);
 }
 
-.hero__container {
-  padding: 200px 0;
-}
-
-.hero__btn-submit {
-  margin: 0 auto;
-}
-
-.headline {
+.section__headline {
   display: block;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;color: var(--white-color);
 }
 
-.hero__headline {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.headline--whitecolor {
-  color: var(--white-color);
-}
-
-.ourteam {
+.section--ourteam {
   min-width: var(--width-container);
   background-color: var(--section-bgcolor);
 }
 
-.title {
+.section__title {
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   color: var(--basic-hcolor);
-}
 
-.title--visually-hidden,
-.modal-order__chbox-accept-terms--visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+  &--whitecolor {
+    color: var(--white-color);
+  }
 
-.title--whitecolor {
-  color: var(--white-color);
-}
-
-.title--uppercase {
-  text-transform: uppercase;
-}
-
-.portfolio__title,
-.ourteam__title,
-.clients__title {
-  margin-bottom: 50px;
-  text-align: center;
+  &--uppercase {
+    text-transform: uppercase;
+  }
 }
 
 .text {
