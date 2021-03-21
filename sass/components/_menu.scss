@@ -22,7 +22,6 @@
   color: var(--basic-hcolor);
   outline: none;
 
-
   &::after {
     content: '';
     position: absolute;
@@ -41,7 +40,7 @@
   }
 
   &:hover,
-  &:focus, {
+  &:focus {
     color: var(--accent-color);
     outline: none;
   }
