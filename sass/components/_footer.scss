@@ -11,28 +11,10 @@
   padding-top: 60px;
 }
 
-.footer__logo {
-  margin-bottom: 20px;
-}
-
 .footer__address-desc {
   display: inline-block;
   margin-bottom: 9px;
   color: var(--white-color);
-}
-
-.listinfo__link--view-for-footer {
-  display: inline-block;
-  line-height: 1.71;
-  color: var(--footter-acolor-60);
-}
-
-.footer__listinfo__item {
-  display: block;
-}
-
-.footer__listinfo__item:not(:last-child) {
-  margin-bottom: 9px;
 }
 
 .footer__title {

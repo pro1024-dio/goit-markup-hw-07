@@ -54,3 +54,22 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin placeItemsGrid($indent) {
+  justify-content: flex-start;
+  margin-top: calc(-1 * #{$indent});
+  margin-left: calc(-1 * #{$indent});
+}
+
+@mixin buildGrid($rowitem, $indent) {
+  flex-basis: calc(100% / #{$rowitem} - #{$indent});
+  margin-top: #{$indent};
+  margin-left: #{$indent};
+}
+
+@mixin centeredFlex($display, $width: 100%) {
+  display: #{$display};
+  justify-content: center;
+  align-items: center;
+  width: #{$width};
+}

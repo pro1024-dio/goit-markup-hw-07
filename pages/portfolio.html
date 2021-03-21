@@ -21,16 +21,18 @@
   <body>
     <header class="header">
       <div class="wrapper wrapper--borderbottom">
-        <div class="container header__container">
-          <p class="logo header__logo">
+        <div
+          class="container container--forheader container--display container--aligncenter"
+        >
+          <p class="logo logo--inheader">
             <a class="logo__link" href="../index.html"
-              >Web<span class="logo__part logo__part--blackcolor"
+              >Web<span class="logo__span logo__span--dark-part"
                 >Studio</span
               ></a
             >
           </p>
           <nav class="header__nav">
-            <ul class="menu menu--none-liststyle">
+            <ul class="menu">
               <li class="menu__item">
                 <a class="menu__link" href="../index.html">Студия</a>
               </li>
@@ -47,8 +49,8 @@
               </li>
             </ul>
           </nav>
-          <ul class="listinfo header__listinfo">
-            <li class="listinfo__item header__listinfo__item">
+          <ul class="listinfo listinfo--display-header">
+            <li class="listinfo__item listinfo__item--margin-in-header">
               <a
                 class="listinfo__link listinfo__link--view-for-header"
                 href="mailto:info@devstudio.com"
@@ -62,7 +64,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="listinfo__item header__listinfo__item">
+            <li class="listinfo__item listinfo__item--margin-in-header">
               <a
                 class="listinfo__link listinfo__link--view-for-header"
                 href="tel:+380961111111"
@@ -82,8 +84,8 @@
     </header>
     <main>
       <section class="page-portfolio">
-        <div class="container">
-          <h1 class="title title--visually-hidden">Наши работы</h1>
+        <div class="container container--forsection">
+          <h1 class="section__title visually-hidden">Наши работы</h1>
           <!-- Группа кнопок для фильтра работ -->
           <ul class="nav-filter">
             <li class="nav-filter__item">
@@ -118,8 +120,8 @@
           </ul>
           <!-- Группа карточек с работами -->
           <div class="page-portfolio__cards-container">
-            <ul class="cards cards__grid">
-              <li class="cards__card cards__card__gridelement">
+            <ul class="cards cards--type-of-grid">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -135,15 +137,15 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content page-portfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
-                      Технокряк
-                    </h2>
-                    <p class="cards__text">Веб-сайт</p>
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">Технокряк</h2>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Веб-сайт
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -158,15 +160,17 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">
                       Постер New Orlean vs Golden Star
                     </h2>
-                    <p class="cards__text">Дизайн</p>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Дизайн
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -181,15 +185,17 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">
                       Ресторан Seafood
                     </h2>
-                    <p class="cards__text">Приложение</p>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Приложение
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -204,15 +210,17 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">
                       Проект Prime
                     </h2>
-                    <p class="cards__text">Маркетинг</p>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Маркетинг
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -227,15 +235,17 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">
                       Проект Boxes
                     </h2>
-                    <p class="cards__text">Приложения</p>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Приложения
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -250,15 +260,17 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">
                       Inspiration has no Borders
                     </h2>
-                    <p class="cards__text">Веб-сайт</p>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Веб-сайт
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -273,15 +285,17 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">
                       Издание Limited Edition
                     </h2>
-                    <p class="cards__text">Дизайн</p>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Дизайн
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -296,15 +310,15 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
-                      Проект LAB
-                    </h2>
-                    <p class="cards__text">Маркетинг</p>
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">Проект LAB</h2>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Маркетинг
+                    </p>
                   </div>
                 </a>
               </li>
-              <li class="cards__card cards__card__gridelement">
+              <li class="cards__card cards__card--for-page-portfolio">
                 <a class="cards__link" href="#">
                   <div class="cards__thumb">
                     <img
@@ -331,11 +345,13 @@
                       </p>
                     </div>
                   </div>
-                  <div class="cards__content prtfolio__cards__content">
-                    <h2 class="cards__title page-portfolio__cards__title">
+                  <div class="cards__desc cards__desc--for-page-portfolio">
+                    <h2 class="cards__title cards__title--bold">
                       Growing Business
                     </h2>
-                    <p class="cards__text">Приложения</p>
+                    <p class="cards__text cards__text--for-page-portfolio">
+                      Приложения
+                    </p>
                   </div>
                 </a>
               </li>
@@ -347,11 +363,13 @@
     <!-- Section FOOTER -->
     <footer class="footer">
       <div class="wrapper footer__wrapper">
-        <div class="container footer__container">
+        <div
+          class="container container--forfooter container--display container--spacebetween"
+        >
           <div class="footer__block-contact">
-            <p class="logo footer__logo">
+            <p class="logo logo--infooter">
               <a class="logo__link" href="../index.html"
-                >Web<span class="logo__part logo__part--whitecolor"
+                >Web<span class="logo__span logo__span--light-part"
                   >Studio</span
                 >
               </a>
@@ -361,14 +379,14 @@
                 г. Киев, пр-т Леси Украинки, 26
               </p>
               <ul class="listinfo footer__listinfo">
-                <li class="listinfo__item footer__listinfo__item">
+                <li class="listinfo__item listinfo__item--margin-in-footer">
                   <a
                     class="listinfo__link listinfo__link--view-for-footer"
                     href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
-                <li class="listinfo__item footer__listinfo__item">
+                <li class="listinfo__item listinfo__item--margin-in-footer">
                   <a
                     class="listinfo__link listinfo__link--view-for-footer"
                     href="tel:+380991111111"
@@ -380,8 +398,8 @@
           </div>
           <div class="footer__block-social">
             <h2 class="footer__title">Присоединяйтесь</h2>
-            <ul class="social-list footer__social-list">
-              <li class="social-list__item footer__social-list__item">
+            <ul class="social-list social-list--for-footer">
+              <li class="social-list__item-footer">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://instagram.com"
@@ -391,7 +409,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item footer__social-list__item">
+              <li class="social-list__item-footer">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://twitter.com"
@@ -401,7 +419,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item footer__social-list__item">
+              <li class="social-list__item-footer">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://facebook.com"
@@ -411,7 +429,7 @@
                   </svg>
                 </a>
               </li>
-              <li class="social-list__item footer__social-list__item">
+              <li class="social-list__item-footer">
                 <a
                   class="social-list__link social-list__link--whitecolor"
                   href="https://linkedin.com"
